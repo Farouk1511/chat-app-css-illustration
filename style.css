@@ -1,283 +1,293 @@
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: hsl(0, 0%, 100%);
-    font-size: 16px;
-    font-family: 'Rubik',sans-serif;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-.bg{
-    width: 500px;
-    height: 650px;
-    border-bottom-left-radius: 350px;
-    border-bottom-right-radius: 350px;
-    background-image: linear-gradient(to bottom,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
-    z-index: -2;
-    position: absolute;
-    
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.transparent{
-    
-    background-image: linear-gradient(to top,rgba(233, 66, 255, 0.100),rgba(136, 56, 255, 0.100));
-    bottom: -50px;
-    right: -150px;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-top-right-radius: 350px;
-    border-top-left-radius: 350px;
+.bg {
+  width: 500px;
+  height: 650px;
+  border-bottom-left-radius: 350px;
+  border-bottom-right-radius: 350px;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  z-index: -2;
+  position: absolute;
 }
 
-.fill{
-    top: 0;
-    left: -100px;
+.transparent {
+  background-image: linear-gradient(
+    to top,
+    rgba(233, 66, 255, 0.1),
+    rgba(136, 56, 255, 0.1)
+  );
+  bottom: -50px;
+  right: -150px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-top-right-radius: 350px;
+  border-top-left-radius: 350px;
 }
 
-.outline{
-    margin-top: 100px;
-     position: relative; 
-     width: 300px;
-     height: 600px;
-     background-color: hsl(0, 0%, 100%);
-     /* top: 10%;
+.fill {
+  top: 0;
+  left: -100px;
+}
+
+.outline {
+  margin-top: 100px;
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background-color: hsl(0, 0%, 100%);
+  /* top: 10%;
      left: 20%; */
-     border-radius:30px ;
-     -webkit-border-radius:30px ;
-     -moz-border-radius:30px ;
-     -ms-border-radius:30px ;
-     -o-border-radius:30px ;
-     box-shadow: 0 18px 45px -12px rgba(0, 0, 0, 0.445);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-shadow: 0 18px 45px -12px rgba(0, 0, 0, 0.445);
 }
 
-.inner{
-    width: 90%;
-    height: 570px;
-    background-color: hsl(270, 20%, 96%);
-    margin: 15px auto;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.inner {
+  width: 90%;
+  height: 570px;
+  background-color: hsl(270, 20%, 96%);
+  margin: 15px auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
-.curve{
-   position: absolute;
-   width: 150px;
-   height: 30px;
-   background-color: hsl(0, 0%, 100%);
-   border-radius:20px ;
-   -webkit-border-radius:20px ;
-   -moz-border-radius:20px ;
-   -ms-border-radius:20px ;
-   -o-border-radius:20px ;
-   top: 0;
-   left: 25%;
-}
-
-.header{
-    padding: 20px;
-    background-image: linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
+.curve {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  top: 0;
+  left: 25%;
 }
 
-.header img{
-    width: 50px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    float: left;
-    border: 2px solid #fff;
+.header {
+  padding: 20px;
+  background-image: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.header span{
-    
-    font-size: 70%;
-    margin-left: 10px;
-    vertical-align: middle;
+.header img {
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  float: left;
+  border: 2px solid #fff;
 }
 
-.name{
-    margin: 0;
-    padding: 0;
-    color: hsl(0, 0%, 100%);
-    font-size: 80%;
-    font-weight: bold;
+.header span {
+  font-size: 70%;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
-.header span:last-child{
-    color:  hsl(276, 100%, 81%);
+.name {
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 80%;
+  font-weight: bold;
 }
 
-.chat{
-    padding: 10px;
-    background-color:hsl(275, 29%, 92%) ;
-    font-size: 60%;
-    width: 60%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin: 7px 5px;
-    color: hsl(276, 55%, 52%);
+.header span:last-child {
+  color: hsl(276, 100%, 81%);
 }
 
-.dog-img{
-    float: right;
-    margin: 0 10px;
-
+.chat {
+  padding: 10px;
+  background-color: hsl(275, 29%, 92%);
+  font-size: 60%;
+  width: 60%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 7px 5px;
+  color: hsl(276, 55%, 52%);
 }
 
-.dog-img img{
-    width: 50px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+.dog-img {
+  float: right;
+  margin: 0 10px;
 }
 
-.right{
-    background-color: #fff;
-    color: hsl(271, 15%, 43%);
-    float: right;
-    text-align: left;
-}
-.left{
-    float: left;
-    text-align: left;
+.dog-img img {
+  width: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.option{
-    display: inline-block;
-    background-image: linear-gradient(to left,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
-    padding: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin-bottom: 7px;
-    color: hsl(0, 0%, 100%);
-    font-size: 60%;
-    margin-left: 5px;
-    width: 70%;
-   
-    
-    
+.right {
+  background-color: #fff;
+  color: hsl(271, 15%, 43%);
+  float: right;
+  text-align: left;
+}
+.left {
+  float: left;
+  text-align: left;
 }
 
-.option p{
-    display: inline-block;
-    font-size: 115%;
-    vertical-align: top;
-   margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    margin-left: 5px;
-
-    
+.option {
+  display: inline-block;
+  background-image: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 7px;
+  color: hsl(0, 0%, 100%);
+  font-size: 60%;
+  margin-left: 5px;
+  width: 70%;
 }
 
-.circle{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border: 1px solid hsl(289, 100%, 72%);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.option p {
+  display: inline-block;
+  font-size: 115%;
+  vertical-align: top;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  margin-left: 5px;
 }
 
-.option span{
-    float: right;
-    font-size: 130%;
-    font-weight: bold;
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-.text{
-    
-    position: relative;
+.option span {
+  float: right;
+  font-size: 130%;
+  font-weight: bold;
 }
 
-.text input{
-    width: 90%;
-    margin: 20px 0 10px 10px;
-    padding: 10px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border: none;
+.text {
+  position: relative;
 }
 
-.text input::placeholder{
-    color: hsl(206, 6%, 79%);
+.text input {
+  width: 90%;
+  margin: 20px 0 10px 10px;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: none;
 }
 
-.send-btn{
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 80%;
-    font-weight: bolder;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(271, 36%, 24%);
-    position: absolute;
-    right: 25px;
-    bottom: 15px
-    
+.text input::placeholder {
+  color: hsl(206, 6%, 79%);
 }
 
-button:focus,input:focus{
-    outline: none;
+.send-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 80%;
+  font-weight: bolder;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(271, 36%, 24%);
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button:focus,
+input:focus {
+  outline: none;
 }
 
-.container{
-    width: 50%;
-    margin-left: 80px;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.container h1{
-    color:hsl(271, 36%, 24%);
-    font-size: 250%;
+.container {
+  width: 50%;
+  margin-left: 80px;
 }
 
-.container p{
-    width: 70%;
-    line-height: 1.6;
-    color: hsl(270, 7%, 64%);
-    font-size: 120%;
+.container h1 {
+  color: hsl(271, 36%, 24%);
+  font-size: 250%;
+}
+
+.container p {
+  width: 100%;
+  line-height: 1.6;
+  color: hsl(270, 7%, 64%);
+  font-size: 120%;
+  margin: 0;
 }
