@@ -10,6 +10,9 @@
 
 @media only screen and (max-width: 767px) {
   section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -29,4 +32,33 @@
   .bg {
     width: 300px;
   }
+
+  .outline{
+    width:270px ;
+    height:500px ;
+    margin: 0;
+  }
+
+  .inner{
+    height: 470px;
+  }
+
+  .chat{
+    margin: 3px;
+    padding: 7px;
+  }
+
+  .dog-img img{
+    width: 40px;
+  }
+
+  .text input{
+    margin: 0px 10px;
+  }
+
+  .send-btn{
+    bottom: 7px;
+  }
+
+ 
 }

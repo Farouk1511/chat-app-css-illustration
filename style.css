@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -19,6 +20,12 @@ body {
   height: 70%;
   border-bottom-left-radius: 350px;
   border-bottom-right-radius: 350px;
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(hsl(293, 100%, 63%)),
+    to(hsl(264, 100%, 61%))
+  );
   background-image: linear-gradient(
     to bottom,
     hsl(293, 100%, 63%),
@@ -29,6 +36,12 @@ body {
 }
 
 .transparent {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(rgba(233, 66, 255, 0.1)),
+    to(rgba(136, 56, 255, 0.1))
+  );
   background-image: linear-gradient(
     to top,
     rgba(233, 66, 255, 0.1),
@@ -63,6 +76,7 @@ body {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  -webkit-box-shadow: 0 18px 45px -12px rgba(0, 0, 0, 0.445);
   box-shadow: 0 18px 45px -12px rgba(0, 0, 0, 0.445);
 }
 
@@ -93,6 +107,12 @@ body {
 
 .header {
   padding: 20px;
+  background-image: -webkit-gradient(
+    linear,
+    right top, left top,
+    from(hsl(293, 100%, 63%)),
+    to(hsl(264, 100%, 61%))
+  );
   background-image: linear-gradient(
     to left,
     hsl(293, 100%, 63%),
@@ -177,6 +197,12 @@ body {
 
 .option {
   display: inline-block;
+  background-image: -webkit-gradient(
+    linear,
+    right top, left top,
+    from(hsl(264, 100%, 61%)),
+    to(hsl(293, 100%, 63%))
+  );
   background-image: linear-gradient(
     to left,
     hsl(264, 100%, 61%),
@@ -240,6 +266,14 @@ body {
   border: none;
 }
 
+.text input::-webkit-input-placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+.text input:-ms-input-placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
 .text input::placeholder {
   color: hsl(206, 6%, 79%);
 }
@@ -268,8 +302,14 @@ input:focus {
 }
 
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 20px;
 }
